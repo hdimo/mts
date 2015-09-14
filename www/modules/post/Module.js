@@ -7,7 +7,6 @@ angular.module('app.post', [])
                     url: '',
                     templateUrl: 'modules/post/view/post-list.html'
                 })
-
                 .state('app.post.detail', {
                     url: '/detail',
                     params:{
