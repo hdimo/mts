@@ -4,13 +4,13 @@
         <div class="card list">
             <div class="item text-center">
                 <button class="button button-calm button-outline ">
-                        Prendre une photo
-                        <i class="icon ion-image"></i>
+                    Prendre une photo
+                    <i class="icon ion-image"></i>
                 </button>
             </div>
 
             <div class="item">
-                <img ng-src="{{imageSource}}" />
+                <img ng-src="{{imageSource}}"/>
             </div>
         </div>
 
@@ -24,7 +24,7 @@
                            ng-required='true'
                            ng-minlength="2"
                            type="text"
-                           placeholder="Nom" >
+                           placeholder="Nom">
                 </label>
 
                 <label class="item item-input item-stacked-label">
@@ -48,7 +48,9 @@
                 </label>
 
                 <div class="item">
-                    <button ng-disabled='!contactForm.$valid' class="button button-calm button-outline">Envoyer</button>
+                    <button ng-disabled='!contactForm.$valid'
+                            class="button button-calm button-outline">Envoyer
+                    </button>
                 </div>
                 <div class="item item-divider"></div>
             </div>

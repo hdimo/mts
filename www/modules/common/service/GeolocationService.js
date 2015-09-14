@@ -16,8 +16,8 @@ angular.module('app.common')
                 }, function (err) {
                     console.error('Geolocation : ' + err);
                 });
-        };
-        return{
+        }
+        return {
             getPosition: getPosition
         };
     }])
