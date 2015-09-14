@@ -1,0 +1,22 @@
+<ion-view view-title="{{pageTitle}}" ng-controller="PostListController">
+
+    <ion-content>
+        <div class="list card">
+            <div class="item item-stable">
+                Les dernieres articles ?
+            </div>
+            <a class="item item-thumbnail-left item-icon-right"
+               ng-repeat="item in listPost"
+               ui-sref="app.post.detail({id: {{item.id}} })">
+
+                <img ng-src="cover.jpg">
+
+                <h2>{{item.title}}</h2>
+
+                <p>{{item.description}}</p>
+
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
